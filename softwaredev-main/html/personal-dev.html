@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Oportuniza - Calendar</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+    <nav class="nav">
+        <h1>Oportuniza</h1>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="profile.html">Profile</a></li>
+          <li><a href="opportunities copy.html">Opportunities</a></li>
+          <li><a href="personal-dev.html" class="active">Personal Dev</a></li>
+          <li><a href="mentoring.html">Mentoring</a></li>
+        </ul>
+      </nav>
+      <main class="container">
+        <h2 class="scholarship-section-title">Personal Development Tracker</h2>
+        <section class="personal-dev-intro intro">
+          <p>Track your personal growth by setting and achieving goals. Add your goals below and monitor your progress over time!</p>
+        </section>
+        <section class="personal-dev-form-section ask-question">
+          <form id="goal-form">
+            <label for="goal-input">New Goal:</label>
+            <input type="text" id="goal-input" placeholder="Write a personal goal..." required>
+            <button type="submit">Add Goal</button>
+          </form>
+        </section>
+        <section class="personal-dev-goals-section">
+          <h3 style="margin-bottom: 4px;">Your Personal Growth Journey</h3>
+          <p style="margin-top:0; color:#4f46e5; font-weight:500; font-size:1.08em;">Set, track, and achieve your goals—one step at a time.</p>
+          <ul id="goal-list" class="opportunities-list"></ul>
+        </section>
+      </main>
+      <footer>
+        <p>© 2025 Oportuniza. All rights reserved.</p>
+      </footer>
+      <script>
+        const form = document.getElementById('goal-form');
+        const list = document.getElementById('goal-list');
+    
+        form.addEventListener('submit', function (e) {
+          e.preventDefault();
+          const goalText = document.getElementById('goal-input').value;
+          if (goalText) {
+            const li = document.createElement('li');
+            li.textContent = goalText;
+            list.appendChild(li);
+            form.reset();
+          }
+        });
+      </script>
+    </body>
+    </html>

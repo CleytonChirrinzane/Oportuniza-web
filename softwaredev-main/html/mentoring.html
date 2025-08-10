@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Oportuniza - Mentoring</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <nav class="nav">
+    <h1>Oportuniza</h1>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="profile.html">Profile</a></li>
+      <li><a href="opportunities copy.html">Opportunities</a></li>
+      <li><a href="personal-dev.html">Personal Dev</a></li>
+      <li><a href="mentoring.html" class="active">Mentoring</a></li>
+    </ul>
+  </nav>
+
+  <main class="container">
+    <h2>Mentoring & Support</h2>
+    <section class="intro">
+      <p>Welcome to Oportuniza's Mentoring & Support! Here, you can connect with experienced professionals, ask career questions, and access valuable resources to help you grow. Whether you're seeking advice, guidance, or inspiration, we're here to support your journey.</p>
+    </section>
+
+    <section class="ask-question">
+      <h3>Ask a Career Question</h3>
+      <form id="questionForm">
+        <label for="name">Name (optional):</label>
+        <input type="text" id="name" name="name" />
+        <label for="email">Email (optional):</label>
+        <input type="email" id="email" name="email" />
+        <label for="question">Your Question:</label>
+        <textarea id="question" name="question" required></textarea>
+        <button type="submit">Submit</button>
+      </form>
+      <div id="thankYouMessage" style="display:none; color:green; margin-top:10px;">Thank you for your question! Our mentors will get back to you soon.</div>
+    </section>
+
+    <section class="mentors">
+      <h3>Featured Mentors</h3>
+      <div class="mentor-list">
+        <div class="mentor-card">
+          <img src="https://randomuser.me/api/portraits/women/44.jpg" alt="Maria Silva Photo" />
+          <h4>Maria Silva</h4>
+          <p>Software Engineer, Tech Lead</p>
+          <p>Maria has 10+ years of experience in software development and is passionate about helping students break into tech.</p>
+          <button disabled>Request Mentorship</button>
+        </div>
+        <div class="mentor-card">
+          <img src="https://randomuser.me/api/portraits/men/32.jpg" alt="João Pereira Photo" />
+          <h4>João Pereira</h4>
+          <p>Career Coach</p>
+          <p>João specializes in career transitions and personal development, guiding young professionals to achieve their goals.</p>
+          <button disabled>Request Mentorship</button>
+        </div>
+        <div class="mentor-card">
+          <img src="https://randomuser.me/api/portraits/women/65.jpg" alt="Ana Costa Photo" />
+          <h4>Ana Costa</h4>
+          <p>HR Specialist</p>
+          <p>Ana offers insights on CV building, interview skills, and networking strategies for students and graduates.</p>
+          <button disabled>Request Mentorship</button>
+        </div>
+      </div>
+    </section>
+
+    <section class="faq">
+      <h3>Frequently Asked Questions</h3>
+      <ul>
+        <li><strong>How do I find a mentor?</strong> — Browse our featured mentors or submit your question to get matched with someone who can help.</li>
+        <li><strong>Is mentoring free?</strong> — Yes, all mentoring and support features on Oportuniza are free for students.</li>
+        <li><strong>What kind of questions can I ask?</strong> — Anything related to careers, studies, internships, personal development, and more!</li>
+      </ul>
+    </section>
+
+    <section class="resources">
+      <h3>Useful Resources</h3>
+      <ul>
+        <li><a href="https://www.coursera.org/articles/mentorship" target="_blank">What is Mentorship? (Coursera)</a></li>
+        <li><a href="https://www.linkedin.com/pulse/importance-mentorship-career-development-jane-doe/" target="_blank">The Importance of Mentorship (LinkedIn)</a></li>
+        <li><a href="https://www.ted.com/topics/mentoring" target="_blank">TED Talks on Mentoring</a></li>
+      </ul>
+    </section>
+  </main>
+
+  <script>
+    document.getElementById('questionForm').addEventListener('submit', function(e) {
+      e.preventDefault();
+      document.getElementById('questionForm').style.display = 'none';
+      document.getElementById('thankYouMessage').style.display = 'block';
+    });
+  </script>
+
+  <footer>
+    <p>© 2025 Oportuniza. All rights reserved.</p>
+  </footer>
+</body>
+</html>

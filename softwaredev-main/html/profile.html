@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Oportuniza - Profile</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <nav class="nav">
+    <h1>Oportuniza</h1>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="profile.html" class="active">Profile</a></li>
+      <li><a href="opportunities copy.html">Opportunities</a></li>
+      <li><a href="personal-dev.html">Personal Dev</a></li>
+      <li><a href="mentoring.html">Mentoring</a></li>
+    </ul>
+  </nav>
+
+  <main class="container">
+    <h2>Your Profile</h2>
+    <form class="profile-form-card">
+      <label for="fullname">Full Name:</label><br />
+      <input type="text" id="fullname" name="fullname" required /><br /><br />
+
+      <label for="email">Email Address:</label><br />
+      <input type="email" id="email" name="email" required /><br /><br />
+
+      <label for="phone">Phone Number:</label><br />
+      <input type="tel" id="phone" name="phone" pattern="[0-9\-\+\s\(\)]*" /><br /><br />
+
+      <label for="dob">Date of Birth:</label><br />
+      <input type="date" id="dob" name="dob" /><br /><br />
+
+      <label for="gender">Gender:</label><br />
+      <select id="gender" name="gender">
+        <option value="">Select</option>
+        <option value="female">Female</option>
+        <option value="male">Male</option>
+        <option value="other">Other</option>
+        <option value="prefer_not_say">Prefer not to say</option>
+      </select><br /><br />
+
+      <label for="location">Location (City, Country):</label><br />
+      <input type="text" id="location" name="location" /><br /><br />
+
+      <label for="education">Education Level:</label><br />
+      <select id="education" name="education">
+        <option value="">Select</option>
+        <option value="high_school">High School</option>
+        <option value="undergraduate">Undergraduate</option>
+        <option value="graduate">Graduate</option>
+        <option value="postgraduate">Postgraduate</option>
+        <option value="other">Other</option>
+      </select><br /><br />
+
+      <label for="skills">Skills (comma separated):</label><br />
+      <input type="text" id="skills" name="skills" placeholder="e.g. Python, Communication, Leadership" /><br /><br />
+
+      <label for="profilepic">Upload Profile Picture:</label><br />
+      <input type="file" id="profilepic" name="profilepic" accept="image/*" /><br /><br />
+
+      <label for="story">Tell us your story:</label><br />
+      <textarea id="story" name="story" rows="5" placeholder="Write about yourself..."></textarea><br /><br />
+
+      <label for="cv">Upload your CV:</label><br />
+      <input type="file" id="cv" name="cv" /><br /><br />
+
+      <button type="submit">Save Profile</button>
+    </form>
+  </main>
+
+  <footer>
+    <p>© 2025 Oportuniza. All rights reserved.</p>
+  </footer>
+</body>
+</html>

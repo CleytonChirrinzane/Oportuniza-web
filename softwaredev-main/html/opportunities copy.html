@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Oportuniza - Opportunities</title>
+</head>
+  <link rel="stylesheet" href="css/style.css" />
+  <style>
+    .section-links {
+      margin-top: 30px;
+      display: flex;
+      gap: 20px;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .section-links .button {
+      background-color: #4f46e5;
+      color: white;
+      padding: 12px 24px;
+      text-align: center;
+      border-radius: 8px;
+      text-decoration: none;
+      font-weight: bold;
+      font-size: 16px;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+      transition: background-color 0.3s ease;
+      width: 250px;
+    }
+
+    .section-links .button:hover {
+      background-color: #4338ca;
+    }
+
+    @media (min-width: 600px) {
+      .section-links {
+        flex-direction: row;
+      }
+    }
+
+    .container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+  </style>
+</head>
+<body>
+  <nav class="nav">
+    <h1>Oportuniza</h1>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="profile.html">Profile</a></li>
+      <li><a href="opportunities copy.html" class="active">Opportunities</a></li>
+      <li><a href="personal-dev.html">Personal Dev</a></li>
+      <li><a href="mentoring.html">Mentoring</a></li>
+    </ul>
+  </nav>
+  <main class="container" style="text-align: center;">
+    
+    <h2>Opportunities</h2>
+    <div class="section-links">
+      <a href="scholarships.html" class="button">View Scholarships</a>
+      <a href="internships.html" class="button">View Internships & Jobs</a>
+    </div>
+    
+  </main>
+  <footer>
+    <p>© 2025 Oportuniza. All rights reserved.</p>
+  </footer>
+  
+</body>
+</html>
